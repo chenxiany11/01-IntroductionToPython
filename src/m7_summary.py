@@ -46,7 +46,7 @@ blue_turtle.pen = rg.Pen('blue', 5)
 blue_turtle.left(90)
 blue_turtle.forward(200)
 blue_turtle.pen_up()
-blue_turtle.go_to(100, -40)
+blue_turtle.go_to(100, 40)
 blue_turtle.pen_down()
 
 blue_turtle.pen = rg.Pen('green', 10)
