@@ -152,11 +152,11 @@ natasha.forward(100)
 #
 ###############################################################################
 smt = rg.SimpleTurtle()
-smt.pen = rg.Pen('blue',10)
+smt.pen = rg.Pen('blue', 10)
 smt.backward(50)
 ###############################################################################
 #
-# TODO: 6.
+# DONE: 6.
 #   Run one more time to be sure that all is still OK.
 #   Ensure that no blue bars on the scrollbar-thing to the right remain.
 #
