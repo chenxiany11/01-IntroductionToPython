@@ -38,19 +38,36 @@ Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
 #   As always, COMMIT-and-PUSH when you are done with this module.
 #
 ###############################################################################
+
+# import rosegraphics and construct a TurtleWindow
+
 import rosegraphics as rg
 window = rg.TurtleWindow()
 
+# Constructs a SimpleTurtle with a  blue  Pen
 blue_turtle = rg.SimpleTurtle('turtle')
 blue_turtle.pen = rg.Pen('blue', 5)
+
+# Makes the SimpleTurtle go straight UP 200 pixels
 blue_turtle.left(90)
 blue_turtle.forward(200)
+
+# make its pen go UP
 blue_turtle.pen_up()
-blue_turtle.go_to(100, 40)
+
+# Tells the SimpleTurtle to go to (100, -40)
+x = 100
+y = -40
+blue_turtle._turtle.goto(x, y)
+
+# Tells the SimpleTurtle to make its pen go DOWN
 blue_turtle.pen_down()
 
+# Makes the SimpleTurtle's pen have color "green" and thickness 10
 blue_turtle.pen = rg.Pen('green', 10)
-blue_turtle.left(90)
+
+# Tells the SimpleTurtle to go 150 pixels straight DOWN
+blue_turtle.right(180)
 blue_turtle.forward(150)
 
 window.close_on_mouse_click()
